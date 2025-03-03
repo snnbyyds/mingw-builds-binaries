@@ -63,6 +63,9 @@ jobs:
         --arch=${{ matrix.arch }}
         --bin-compress
         --enable-languages=c,c++,fortran
+        --disable-win32-registry
+        --enable-static
+        --disable-shared
 
     - name: Upload
       uses: actions/upload-artifact@v3
