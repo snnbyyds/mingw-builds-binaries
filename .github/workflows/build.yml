@@ -63,7 +63,7 @@ jobs:
         --arch=${{ matrix.arch }}
         --bin-compress
         --enable-languages=c,c++
-        --static-gcc
+        --with-default-win32-winnt=0x0500
 
     - name: Upload
       uses: actions/upload-artifact@v4
