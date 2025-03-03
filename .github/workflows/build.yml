@@ -68,7 +68,7 @@ jobs:
         --disable-shared
 
     - name: Upload
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: 'archives'
         path: c:/buildroot/archives/
@@ -79,7 +79,7 @@ jobs:
 
     steps:
     - name: Download artifact
-      uses: actions/download-artifact@v3
+      uses: actions/download-artifact@v4
       with:
         name: 'archives'
         path: ./
