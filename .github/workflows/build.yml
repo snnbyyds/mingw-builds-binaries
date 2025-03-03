@@ -62,8 +62,7 @@ jobs:
         --exceptions=${{ matrix.exceptions }}
         --arch=${{ matrix.arch }}
         --bin-compress
-        --enable-languages=c,c++,fortran
-        --disable-win32-registry
+        --enable-languages=c,c++
         --enable-static
         --disable-shared
 
